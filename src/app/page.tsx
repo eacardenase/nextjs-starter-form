@@ -22,7 +22,13 @@ export default function Home() {
           </div>
         </div>
         <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-          <form className="space-y-6" method="POST" data-netlify="true">
+          <form
+            className="space-y-6"
+            method="POST"
+            name="starter-form"
+            data-netlify="true"
+            action="/success"
+          >
             <div>
               <label
                 htmlFor="email"
