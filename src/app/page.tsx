@@ -17,7 +17,7 @@ export default function Home() {
               alt="Your Company"
             />
             <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
-              Sign in to your account
+              Sample Form in NextJS with Netlify
             </h2>
           </div>
         </div>
@@ -29,6 +29,7 @@ export default function Home() {
             data-netlify="true"
             action="/success"
           >
+            <input type="hidden" name="form-name" value="contact" />
             <div>
               <label
                 htmlFor="email"
@@ -51,7 +52,7 @@ export default function Home() {
             <div>
               <div className="flex items-center justify-between">
                 <label
-                  htmlFor="password"
+                  htmlFor="message"
                   className="block text-sm font-medium leading-6 text-gray-900"
                 >
                   Message
@@ -72,7 +73,7 @@ export default function Home() {
                 type="submit"
                 className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
-                Sign in
+                Submit form
               </button>
             </div>
           </form>
